@@ -1,0 +1,13 @@
+fastapi
+sqlalchemy
+uvicorn
+pymysql
+python-dotenv
+email_validator
+cryptography
+httpx
+python-multipart
+python-jose
+passlib[bcrypt]
+pytest
+pytest-mock
