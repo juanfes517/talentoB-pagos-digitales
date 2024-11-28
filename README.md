@@ -1,6 +1,6 @@
-# Proyecto FastAPI
+# Proyecto Prueba Técnica Talento B
 
-Este es un proyecto básico utilizando **FastAPI** para crear una API RESTful
+Este proyecto es el desarrollo de la prueba técnica para Talento B - Bancolombia. El objetivo del proyecto es crear una API que permita la autenticación de usuarios y simular los pagos que realizan.
 
 ## Requisitos
 
@@ -10,53 +10,37 @@ Este es un proyecto básico utilizando **FastAPI** para crear una API RESTful
 
 ## Instalación
 
-1. **Clona el repositorio:**
+### Opción 1: Usando Docker compose
+
+**Clona el repositorio:**
   ```bash
    git clone https://github.com/juanfes517/talentoB-pagos-digitales.git
    cd talentoB-pagos-digitales
   ```
 
-2. **Crea un entorno virtual (Windows):**
-  ```bash
-  python -m venv venv
-  ./venv/Scripts/activate
-  ```
-
-3. **Instala las dependencias:**
-  ```bash
-  python -m venv venv
-  ./venv/Scripts/activate
-  ```
-
-4. **Instala las dependencias:**
-  ```bash
-  pip install -r requirements.txt
-  ```
-
-5. **Configuración de las variables de entorno. Crea un archivo <.env> en la raiz del proyecto con las siguientes variables:**
-  ```bash
-  MYSQL_USER=
-  MYSQL_DATABASE=
-  MYSQL_ROOT_PASSWORD=
-
-  DB_PORT=
-  APP_PORT=
-  HOST=
-
-  JWT_SECRET_KEY=
-  JWT_ALGORITHM=
-  ACCESS_TOKEN_EXPIRE_MINUTES=
-  ```
-
-## **Ejecuta la aplicación:**
-  - Si no tienes Docker en tu maquina:
-  ```bash
-  uvicorn main:app --reload
-  ```
-  - Si tienes Docker, puedes usar el sisguinete comando en la raiz del proyecto:
+**Ejecuta el docker compose:**
   ```bash
   docker compose up -d
   ```
+
+### Opción 2: Usando uvicorn 
+
+**Clona el repositorio:**
+  ```bash
+   git clone https://github.com/juanfes517/talentoB-pagos-digitales.git
+   cd talentoB-pagos-digitales
+  ```
+
+**Instala las dependencias:**
+  ```bash
+  pip install --no-cache-dir -r requirements.txt
+  ```
+
+**Ejecuta el proyecto:**
+  ```bash
+  uvicorn app.main:app --reload
+  ```
+
 
 ## Estructura del proyecto:
 ```
@@ -122,3 +106,9 @@ Respuesta exitosa:
   }
 }
 ```
+
+
+## Información de contacto
+- **Nombre:** Juan Felipe Escobar Rendón
+- **Correo Electrónico:** juanfes517@gmail.com
+- **Teléfono:** 320 881 7689
