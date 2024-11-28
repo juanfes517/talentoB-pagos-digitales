@@ -69,13 +69,13 @@ fastapi-project/
 ## Endpoints principales
 
 Para realizar pruebas, usar uno de los siguiente usuarios:
-|   User   | Password  |
-|----------|-----------|
-| user_0   |   1234    |
-| user_1   |   1234    |
-| user_2   |   1234    |
-| user_3   |   1234    |
-| user_4   |   1234    |
+|ID |   User   | Password  |
+|---|----------|-----------|
+| 1 | user_0   |   1234    |
+| 2 | user_1   |   1234    |
+| 3 | user_2   |   1234    |
+| 4 | user_3   |   1234    |
+| 5 | user_4   |   1234    |
 
 ### `POST /auth/login`
 Autentica a un usuario y devuelve un token de acceso JWT.
