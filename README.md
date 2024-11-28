@@ -2,6 +2,8 @@
 
 Este proyecto es el desarrollo de la prueba técnica para Talento B - Bancolombia. El objetivo del proyecto es crear una API que permita la autenticación de usuarios y simular los pagos que realizan.
 
+Actualmente la aplicación se encuentra desplegada en AWS y podrá acceder a través de este [enlace.](http://18.220.201.115:8000/docs#/) 
+
 ## Requisitos
 
 - Python 3.7 o superior
@@ -65,6 +67,15 @@ fastapi-project/
 ```
 
 ## Endpoints principales
+
+Para realizar pruebas, usar uno de los siguiente usuarios:
+|   User   | Password  |
+|----------|-----------|
+| user_0   |   1234    |
+| user_1   |   1234    |
+| user_2   |   1234    |
+| user_3   |   1234    |
+| user_4   |   1234    |
 
 ### `POST /auth/login`
 Autentica a un usuario y devuelve un token de acceso JWT.

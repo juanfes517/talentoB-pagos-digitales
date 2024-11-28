@@ -6,7 +6,7 @@ import os
 
 load_dotenv()
 
-USER_DB = os.getenv("MYSQL_USER")
+USER_DB = os.getenv("DB_USER")
 PASSWORD = os.getenv("MYSQL_ROOT_PASSWORD")
 HOST = os.getenv("HOST")
 PORT = os.getenv("DB_PORT")
